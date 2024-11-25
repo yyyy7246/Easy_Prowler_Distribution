@@ -45,34 +45,38 @@ Prowler 환경을 배포하려면 `terraform_start.sh` 스크립트를 실행하
 2. custom_gdpr_aws
 3. custom_k_pipa_aws
 
-커스텀 룰셋은 [CustomRuleGenerator](https://yyyy7246.github.io/CustomRuleGenerator/)에서 다운로드할 수 있습니다.
+커스텀 룰셋(규정 준수 룰셋 파일)은 [CustomRuleGenerator](https://yyyy7246.github.io/CustomRuleGenerator/)에서 다운로드할 수 있습니다.
 
 ## 실행 화면(./terraform_start.sh 입력)
 
 ![Terraform 실행 화면](./images/tf_start_1.png)
+쉘코드 실행시 필요한 역할 및 리소스등을 자동으로 구성합니다.
 
 ## ECS 구성 화면
 
 ![자동으로 구현된 ECS](./images/tf_start_2.png)
+ECS에서 fargate로 검사를 진행하는 것을 확인할 수 있습니다.
 
 ## S3 저장 화면
 
 ![자동으로 S3에 저장된 결과파일](./images/tf_start_3.png)
+실행이 완료되면 지정된 S3 버킷에서 상세한 점검 결과를 확인할 수 있습니다.
 
-## SLACK 알림 화면
+## SLACK 알림 화면(선택)
+
 ![검사 종료 후 슬랙으로 알림](./images/tf_slack.png)
+추가적으로 슬랙으로 요약된 점검결과를 받을 수 있으며 점검결과 다운로드 명령어를 전송합니다.
 
 ## [Prowler](https://github.com/prowler-cloud/prowler) Dashboard 실행 화면
 
 ![prowler dashboard 실행 화면](./images/tf_start_4.png)
+점검 결과에는 prowler에서 생성되어 csv, json, html 형태가 있으며 prowler dashboard로 실행이 가능합니다. 
 
 ## 삭제 화면(./terraform_stop_destroy.sh 입력)
 
 ![Terraform 삭제 화면](./images/tf_destroy.png)
+검사에 필요한 모든 역할 리소스들을 삭제하여 검사 전의 환경으로 되돌립니다.
 
-
-
-실행이 완료되면 지정된 S3 버킷에서 상세한 보안 평가 보고서를 확인할 수 있습니다.
 
 ---
 

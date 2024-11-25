@@ -33,7 +33,7 @@ Prowler 환경을 배포하려면 `terraform_start.sh` 스크립트를 실행하
 | 변수명 | 설명 | 예시 |
 |--------|------|------|
 | aws_region | AWS 리전 | us-west-1 |
-| subnet_id | 서브넷 ID | subnet-*** |
+| subnet_id   (퍼블릭) | 서브넷 ID | subnet-*** |
 | security_group_id | 보안그룹 ID | sg-*** |
 | s3_bucket_name | S3 버킷 이름 (고유해야 함) | my-unique-bucket-name |
 | slack_webhook_url(선택) | Slack 웹훅 URL | https://hooks.slack.com/services/*****/... |

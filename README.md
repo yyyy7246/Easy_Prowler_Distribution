@@ -36,9 +36,9 @@ Prowler 환경을 배포하려면 `terraform_start.sh` 스크립트를 실행하
 | subnet_id | 서브넷 ID | subnet-*** |
 | security_group_id | 보안그룹 ID | sg-*** |
 | s3_bucket_name | S3 버킷 이름 (고유해야 함) | my-unique-bucket-name |
-| slack_webhook_url(선택) | Slack 웹훅 URL | https://hooks.slack.com/services/*****/*****/***** |
-| compliance_type | 규정 준수 유형 | "custom_ccpa_aws" |
-| compliance_file | 규정 준수 룰셋 파일 | "compliance_rules_CCPA_2024-11-23.json" |
+| slack_webhook_url(선택) | Slack 웹훅 URL | https://hooks.slack.com/services/*****/... |
+| compliance_type | 규정 준수 유형 | custom_ccpa_aws |
+| compliance_file | 규정 준수 룰셋 파일 | compliance_rules_CCPA_2024-11-23.json |
 
 **규정 준수 유형 옵션:**
 1. custom_ccpa_aws
